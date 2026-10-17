@@ -1,49 +1,40 @@
-set positional-arguments := true
-
-app_pkg := "oh-hell-app"
-
 default:
     @just --list
 
+install:
+    yarn install --frozen-lockfile
+
 fmt:
-    cargo fmt --all
+    yarn format
     alejandra --quiet .
 
 fmt-check:
-    cargo fmt --all --check
+    yarn format:check
     alejandra --quiet --check .
 
-# The app's default `web` feature only builds for wasm32, so native runs use `desktop`.
 lint:
-    cargo clippy --workspace --exclude {{app_pkg}} --all-targets -- -D warnings
-    cargo clippy -p {{app_pkg}} --all-targets --no-default-features --features desktop -- -D warnings
-    cargo clippy -p {{app_pkg}} --target wasm32-unknown-unknown -- -D warnings
+    yarn lint
+
+typecheck:
+    yarn typecheck
 
 test:
-    cargo test --workspace --exclude {{app_pkg}}
-    cargo test -p {{app_pkg}} --no-default-features --features desktop
+    yarn test
 
-build:
-    cargo build --workspace --exclude {{app_pkg}}
-    cargo build -p {{app_pkg}} --no-default-features --features desktop
+check: fmt-check lint typecheck test
 
-web-build:
-    dx build --web --package {{app_pkg}} --release --debug-symbols false
-
-check: fmt-check lint test web-build
-
-# Run the API server; pass --web-dir to also serve a built web client.
-serve *args:
-    cargo run -p oh-hell-server -- "$@"
-
-# Dioxus web dev server.
+# Expo dev server for the browser.
 web *args:
-    dx serve --web --package {{app_pkg}} "$@"
+    yarn web "$@"
 
-# Dioxus desktop app.
-desktop *args:
-    dx serve --platform desktop --package {{app_pkg}} --no-default-features --features desktop "$@"
+# Static web export into dist/; set OH_HELL_WEB_BASE_URL to serve under a path.
+web-build:
+    yarn export:web
 
-# Android debug build; run from `nix develop .#android`.
-android-build *args:
-    dx build --android --package {{app_pkg}} --no-default-features --features android "$@"
+# Desktop app (Electron around the web export), built and run through nix.
+desktop:
+    nix run .#desktop
+
+# Build and run on a connected Android device; run from `nix develop .#android`.
+android *args:
+    yarn android "$@"

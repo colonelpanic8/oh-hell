@@ -16,18 +16,11 @@ jobs:
 
       - uses: DeterminateSystems/magic-nix-cache-action@main
 
-      - uses: actions/cache@v4
-        with:
-          path: |
-            ~/.cargo/registry
-            ~/.cargo/git
-            target
-          key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-cargo-
+      - name: Install dependencies
+        run: nix develop --command just install
 
       - name: just check
         run: nix develop --command just check
 
-      - name: nix flake check
-        run: nix flake check
+      - name: Build web and desktop packages
+        run: nix build .#web .#desktop
