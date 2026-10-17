@@ -1,0 +1,261 @@
+- generic [ref=e7]:
+    - generic:
+        - generic:
+            - generic:
+                - button "All games" [ref=e27] [cursor=pointer]:
+                    - img: 󰚡
+                - heading "Tricks or difference" [level=1] [ref=e28]
+                - button "Game menu" [active] [ref=e31] [cursor=pointer]:
+                    - img: 󰇙
+    - generic [ref=e33]:
+        - generic [ref=e34]:
+            - generic [ref=e35]:
+                - button "1. Priya 2" [disabled]:
+                    - generic [ref=e37]: 1. Priya 2
+            - generic [ref=e38]:
+                - button "2. Ivan 1" [disabled]:
+                    - generic [ref=e40]: 2. Ivan 1
+            - generic [ref=e41]:
+                - button "3. Maya -2" [disabled]:
+                    - generic [ref=e43]: 3. Maya -2
+            - generic [ref=e44]:
+                - button "3. Theo -2" [disabled]:
+                    - generic [ref=e46]: 3. Theo -2
+        - generic [ref=e49]:
+            - generic [ref=e50]:
+                - generic [ref=e51]: Hand 6 of 25 · 6 cards
+                - generic [ref=e52]: "Maya deals · Trump: Turn up a card"
+            - generic [ref=e53]: "Bids: 2 of 6 · under by 4"
+            - generic [ref=e54]:
+                - generic [ref=e55]: Theo
+                - generic [ref=e56]:
+                    - button "0" [ref=e58] [cursor=pointer]:
+                        - generic [ref=e60]: "0"
+                    - button "1" [ref=e62] [cursor=pointer]:
+                        - generic [ref=e64]: "1"
+                    - button "2" [ref=e66] [cursor=pointer]:
+                        - generic [ref=e68]: "2"
+                    - button "3" [ref=e70] [cursor=pointer]:
+                        - generic [ref=e72]: "3"
+                    - button "4" [ref=e74] [cursor=pointer]:
+                        - generic [ref=e76]: "4"
+                    - button "5" [ref=e78] [cursor=pointer]:
+                        - generic [ref=e80]: "5"
+                    - button "6" [ref=e82] [cursor=pointer]:
+                        - generic [ref=e84]: "6"
+            - generic [ref=e85]:
+                - generic [ref=e86]: Priya
+                - generic [ref=e87]:
+                    - button "0" [ref=e89] [cursor=pointer]:
+                        - generic [ref=e91]: "0"
+                    - button "1" [ref=e93] [cursor=pointer]:
+                        - generic [ref=e95]: "1"
+                    - button "2" [ref=e97] [cursor=pointer]:
+                        - generic [ref=e99]: "2"
+                    - button "3" [ref=e101] [cursor=pointer]:
+                        - generic [ref=e103]: "3"
+                    - button "4" [ref=e105] [cursor=pointer]:
+                        - generic [ref=e107]: "4"
+                    - button "5" [ref=e109] [cursor=pointer]:
+                        - generic [ref=e111]: "5"
+                    - button "6" [ref=e113] [cursor=pointer]:
+                        - generic [ref=e115]: "6"
+            - generic [ref=e116]:
+                - generic [ref=e117]: Ivan
+                - generic [ref=e118]:
+                    - button "0" [ref=e120] [cursor=pointer]:
+                        - generic [ref=e122]: "0"
+                    - button "1" [ref=e124] [cursor=pointer]:
+                        - generic [ref=e126]: "1"
+                    - button "2" [ref=e128] [cursor=pointer]:
+                        - generic [ref=e130]: "2"
+                    - button "3" [ref=e132] [cursor=pointer]:
+                        - generic [ref=e134]: "3"
+                    - button "4" [ref=e136] [cursor=pointer]:
+                        - generic [ref=e138]: "4"
+                    - button "5" [ref=e140] [cursor=pointer]:
+                        - generic [ref=e142]: "5"
+                    - button "6" [ref=e144] [cursor=pointer]:
+                        - generic [ref=e146]: "6"
+            - generic [ref=e147]:
+                - generic [ref=e148]: Maya (dealer)
+                - generic [ref=e149]:
+                    - button "0" [ref=e151] [cursor=pointer]:
+                        - generic [ref=e153]: "0"
+                    - button "1" [ref=e155] [cursor=pointer]:
+                        - generic [ref=e157]: "1"
+                    - button "2" [ref=e159] [cursor=pointer]:
+                        - generic [ref=e161]: "2"
+                    - button "3" [ref=e163] [cursor=pointer]:
+                        - generic [ref=e165]: "3"
+                    - button "4" [ref=e167] [cursor=pointer]:
+                        - generic [ref=e169]: "4"
+                    - button "5" [ref=e171] [cursor=pointer]:
+                        - generic [ref=e173]: "5"
+                    - button "6" [ref=e175] [cursor=pointer]:
+                        - generic [ref=e177]: "6"
+            - generic [ref=e178]: Everyone needs a bid.
+            - generic [ref=e179]:
+                - button "Clear" [ref=e181] [cursor=pointer]:
+                    - generic [ref=e183]: Clear
+                - generic [ref=e184]:
+                    - button "Bids are in" [disabled]:
+                        - generic [ref=e185]:
+                            - generic [ref=e186]:
+                                - img: 󰁔
+                            - generic [ref=e187]: Bids are in
+        - generic [ref=e190]:
+            - generic [ref=e191]:
+                - generic [ref=e192]: Ivan
+                - generic [ref=e193]: Maya
+                - generic [ref=e194]: Theo
+                - generic [ref=e195]: Priya
+            - generic [ref=e196]:
+                - generic [ref=e197]: Hand
+                - generic [ref=e198]:
+                    - generic [ref=e199]: Bid
+                    - generic [ref=e200]: Made
+                    - generic [ref=e201]: Score
+                    - generic [ref=e202]: Total
+                - generic [ref=e203]:
+                    - generic [ref=e204]: Bid
+                    - generic [ref=e205]: Made
+                    - generic [ref=e206]: Score
+                    - generic [ref=e207]: Total
+                - generic [ref=e208]:
+                    - generic [ref=e209]: Bid
+                    - generic [ref=e210]: Made
+                    - generic [ref=e211]: Score
+                    - generic [ref=e212]: Total
+                - generic [ref=e213]:
+                    - generic [ref=e214]: Bid
+                    - generic [ref=e215]: Made
+                    - generic [ref=e216]: Score
+                    - generic [ref=e217]: Total
+            - button "Edit hand 1" [ref=e218] [cursor=pointer]:
+                - generic [ref=e219]:
+                    - generic [ref=e220]: "1"
+                    - generic [ref=e221]: 1 card
+                - generic [ref=e222]:
+                    - generic [ref=e223]: "0"
+                    - generic [ref=e224]: "0"
+                    - generic [ref=e225]: "0"
+                    - generic [ref=e226]: "0"
+                - generic [ref=e227]:
+                    - generic [ref=e228]: "1"
+                    - generic [ref=e229]: "1"
+                    - generic [ref=e230]: "+1"
+                    - generic [ref=e231]: "1"
+                - generic [ref=e232]:
+                    - generic [ref=e233]: "0"
+                    - generic [ref=e234]: "0"
+                    - generic [ref=e235]: "0"
+                    - generic [ref=e236]: "0"
+                - generic [ref=e237]:
+                    - generic [ref=e238]: "0"
+                    - generic [ref=e239]: "0"
+                    - generic [ref=e240]: "0"
+                    - generic [ref=e241]: "0"
+            - button "Edit hand 2" [ref=e242] [cursor=pointer]:
+                - generic [ref=e243]:
+                    - generic [ref=e244]: "2"
+                    - generic [ref=e245]: 2 cards
+                - generic [ref=e246]:
+                    - generic [ref=e247]: "1"
+                    - generic [ref=e248]: "0"
+                    - generic [ref=e249]: −1
+                    - generic [ref=e250]: "-1"
+                - generic [ref=e251]:
+                    - generic [ref=e252]: "0"
+                    - generic [ref=e253]: "1"
+                    - generic [ref=e254]: −1
+                    - generic [ref=e255]: "0"
+                - generic [ref=e256]:
+                    - generic [ref=e257]: "1"
+                    - generic [ref=e258]: "0"
+                    - generic [ref=e259]: −1
+                    - generic [ref=e260]: "-1"
+                - generic [ref=e261]:
+                    - generic [ref=e262]: "1"
+                    - generic [ref=e263]: "1"
+                    - generic [ref=e264]: "+1"
+                    - generic [ref=e265]: "1"
+            - button "Edit hand 3" [ref=e266] [cursor=pointer]:
+                - generic [ref=e267]:
+                    - generic [ref=e268]: "3"
+                    - generic [ref=e269]: 3 cards
+                - generic [ref=e270]:
+                    - generic [ref=e271]: "1"
+                    - generic [ref=e272]: "1"
+                    - generic [ref=e273]: "+1"
+                    - generic [ref=e274]: "0"
+                - generic [ref=e275]:
+                    - generic [ref=e276]: "1"
+                    - generic [ref=e277]: "0"
+                    - generic [ref=e278]: −1
+                    - generic [ref=e279]: "-1"
+                - generic [ref=e280]:
+                    - generic [ref=e281]: "0"
+                    - generic [ref=e282]: "1"
+                    - generic [ref=e283]: −1
+                    - generic [ref=e284]: "-2"
+                - generic [ref=e285]:
+                    - generic [ref=e286]: "1"
+                    - generic [ref=e287]: "1"
+                    - generic [ref=e288]: "+1"
+                    - generic [ref=e289]: "2"
+            - button "Edit hand 4" [ref=e290] [cursor=pointer]:
+                - generic [ref=e291]:
+                    - generic [ref=e292]: "4"
+                    - generic [ref=e293]: 4 cards
+                - generic [ref=e294]:
+                    - generic [ref=e295]: "2"
+                    - generic [ref=e296]: "2"
+                    - generic [ref=e297]: "+2"
+                    - generic [ref=e298]: "2"
+                - generic [ref=e299]:
+                    - generic [ref=e300]: "0"
+                    - generic [ref=e301]: "0"
+                    - generic [ref=e302]: "0"
+                    - generic [ref=e303]: "-1"
+                - generic [ref=e304]:
+                    - generic [ref=e305]: "1"
+                    - generic [ref=e306]: "2"
+                    - generic [ref=e307]: −1
+                    - generic [ref=e308]: "-3"
+                - generic [ref=e309]:
+                    - generic [ref=e310]: "1"
+                    - generic [ref=e311]: "0"
+                    - generic [ref=e312]: −1
+                    - generic [ref=e313]: "1"
+            - button "Edit hand 5" [ref=e314] [cursor=pointer]:
+                - generic [ref=e315]:
+                    - generic [ref=e316]: "5"
+                    - generic [ref=e317]: 5 cards
+                - generic [ref=e318]:
+                    - generic [ref=e319]: "1"
+                    - generic [ref=e320]: "0"
+                    - generic [ref=e321]: −1
+                    - generic [ref=e322]: "1"
+                - generic [ref=e323]:
+                    - generic [ref=e324]: "2"
+                    - generic [ref=e325]: "3"
+                    - generic [ref=e326]: −1
+                    - generic [ref=e327]: "-2"
+                - generic [ref=e328]:
+                    - generic [ref=e329]: "1"
+                    - generic [ref=e330]: "1"
+                    - generic [ref=e331]: "+1"
+                    - generic [ref=e332]: "-2"
+                - generic [ref=e333]:
+                    - generic [ref=e334]: "1"
+                    - generic [ref=e335]: "1"
+                    - generic [ref=e336]: "+1"
+                    - generic [ref=e337]: "2"
+            - generic [ref=e338]:
+                - generic [ref=e339]: Total
+                - generic [ref=e341]: "1"
+                - generic [ref=e343]: "-2"
+                - generic [ref=e345]: "-2"
+                - generic [ref=e347]: "2"
+            - generic [ref=e348]: Tap a hand to fix it.

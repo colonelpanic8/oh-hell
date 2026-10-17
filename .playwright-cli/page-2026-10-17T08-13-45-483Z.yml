@@ -1,0 +1,118 @@
+- generic [ref=e7]:
+    - generic:
+        - generic:
+            - generic:
+                - button "All games" [ref=e10] [cursor=pointer]:
+                    - img: 󰚡
+                - heading "Tricks or difference" [level=1] [ref=e11]
+                - button "Game menu" [active] [ref=e14] [cursor=pointer]:
+                    - img: 󰇙
+    - generic [ref=e17]:
+        - generic [ref=e18]:
+            - button "Hand 6" [ref=e20] [cursor=pointer]:
+                - generic [ref=e21]:
+                    - generic [ref=e22]:
+                        - img: 󰘺
+                    - generic [ref=e23]: Hand 6
+            - button "Scores" [ref=e25] [cursor=pointer]:
+                - generic [ref=e26]:
+                    - generic [ref=e27]:
+                        - img: 󰓫
+                    - generic [ref=e28]: Scores
+        - generic [ref=e30]:
+            - generic [ref=e31]:
+                - generic [ref=e32]:
+                    - button "1. Priya 2" [disabled]:
+                        - generic [ref=e34]: 1. Priya 2
+                - generic [ref=e35]:
+                    - button "2. Ivan 1" [disabled]:
+                        - generic [ref=e37]: 2. Ivan 1
+                - generic [ref=e38]:
+                    - button "3. Maya -2" [disabled]:
+                        - generic [ref=e40]: 3. Maya -2
+                - generic [ref=e41]:
+                    - button "3. Theo -2" [disabled]:
+                        - generic [ref=e43]: 3. Theo -2
+            - generic [ref=e46]:
+                - generic [ref=e47]:
+                    - generic [ref=e48]: Hand 6 of 25 · 6 cards
+                    - generic [ref=e49]: "Maya deals · Trump: Turn up a card"
+                - generic [ref=e50]: "Bids: 2 of 6 · under by 4"
+                - generic [ref=e51]:
+                    - generic [ref=e52]: Theo
+                    - generic [ref=e53]:
+                        - button "0" [ref=e55] [cursor=pointer]:
+                            - generic [ref=e57]: "0"
+                        - button "1" [ref=e59] [cursor=pointer]:
+                            - generic [ref=e61]: "1"
+                        - button "2" [ref=e63] [cursor=pointer]:
+                            - generic [ref=e65]: "2"
+                        - button "3" [ref=e67] [cursor=pointer]:
+                            - generic [ref=e69]: "3"
+                        - button "4" [ref=e71] [cursor=pointer]:
+                            - generic [ref=e73]: "4"
+                        - button "5" [ref=e75] [cursor=pointer]:
+                            - generic [ref=e77]: "5"
+                        - button "6" [ref=e79] [cursor=pointer]:
+                            - generic [ref=e81]: "6"
+                - generic [ref=e82]:
+                    - generic [ref=e83]: Priya
+                    - generic [ref=e84]:
+                        - button "0" [ref=e86] [cursor=pointer]:
+                            - generic [ref=e88]: "0"
+                        - button "1" [ref=e90] [cursor=pointer]:
+                            - generic [ref=e92]: "1"
+                        - button "2" [ref=e94] [cursor=pointer]:
+                            - generic [ref=e96]: "2"
+                        - button "3" [ref=e98] [cursor=pointer]:
+                            - generic [ref=e100]: "3"
+                        - button "4" [ref=e102] [cursor=pointer]:
+                            - generic [ref=e104]: "4"
+                        - button "5" [ref=e106] [cursor=pointer]:
+                            - generic [ref=e108]: "5"
+                        - button "6" [ref=e110] [cursor=pointer]:
+                            - generic [ref=e112]: "6"
+                - generic [ref=e113]:
+                    - generic [ref=e114]: Ivan
+                    - generic [ref=e115]:
+                        - button "0" [ref=e117] [cursor=pointer]:
+                            - generic [ref=e119]: "0"
+                        - button "1" [ref=e121] [cursor=pointer]:
+                            - generic [ref=e123]: "1"
+                        - button "2" [ref=e125] [cursor=pointer]:
+                            - generic [ref=e127]: "2"
+                        - button "3" [ref=e129] [cursor=pointer]:
+                            - generic [ref=e131]: "3"
+                        - button "4" [ref=e133] [cursor=pointer]:
+                            - generic [ref=e135]: "4"
+                        - button "5" [ref=e137] [cursor=pointer]:
+                            - generic [ref=e139]: "5"
+                        - button "6" [ref=e141] [cursor=pointer]:
+                            - generic [ref=e143]: "6"
+                - generic [ref=e144]:
+                    - generic [ref=e145]: Maya (dealer)
+                    - generic [ref=e146]:
+                        - button "0" [ref=e148] [cursor=pointer]:
+                            - generic [ref=e150]: "0"
+                        - button "1" [ref=e152] [cursor=pointer]:
+                            - generic [ref=e154]: "1"
+                        - button "2" [ref=e156] [cursor=pointer]:
+                            - generic [ref=e158]: "2"
+                        - button "3" [ref=e160] [cursor=pointer]:
+                            - generic [ref=e162]: "3"
+                        - button "4" [ref=e164] [cursor=pointer]:
+                            - generic [ref=e166]: "4"
+                        - button "5" [ref=e168] [cursor=pointer]:
+                            - generic [ref=e170]: "5"
+                        - button "6" [ref=e172] [cursor=pointer]:
+                            - generic [ref=e174]: "6"
+                - generic [ref=e175]: Everyone needs a bid.
+                - generic [ref=e176]:
+                    - button "Clear" [ref=e178] [cursor=pointer]:
+                        - generic [ref=e180]: Clear
+                    - generic [ref=e181]:
+                        - button "Bids are in" [disabled]:
+                            - generic [ref=e182]:
+                                - generic [ref=e183]:
+                                    - img: 󰁔
+                                - generic [ref=e184]: Bids are in

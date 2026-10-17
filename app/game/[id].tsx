@@ -12,6 +12,7 @@ import {
   Chip,
   IconButton,
   Menu,
+  SegmentedButtons,
   Text,
 } from "react-native-paper";
 
@@ -24,7 +25,11 @@ import { useGames } from "@/context/GamesContext";
 import { rulesName, scheduleLabel } from "@/lib/format";
 import { Game, isFinished, scoresheet, standings } from "@/lib/game";
 
-const WIDE = 900;
+/** Below this height the hand and the scoresheet become tabs. */
+const STACKED_HEIGHT = 1000;
+const CONTENT_WIDTH = 820;
+
+type Tab = "hand" | "scores";
 
 function GameMenu({
   game,
@@ -99,8 +104,9 @@ function GameMenu({
 export default function GameScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const { games, updateGame } = useGames();
-  const { width } = useWindowDimensions();
+  const { height } = useWindowDimensions();
   const [editing, setEditing] = useState<number | null>(null);
+  const [tab, setTab] = useState<Tab>("hand");
 
   if (!games) return <ActivityIndicator style={styles.center} />;
   const game = games.find((g) => g.id === id);
@@ -117,7 +123,7 @@ export default function GameScreen() {
   const sheet = scoresheet(game);
   const finished = isFinished(game, sheet);
   const ranking = standings(sheet.totals);
-  const wide = width >= WIDE;
+  const stacked = height >= STACKED_HEIGHT;
 
   const summary = (
     <View style={styles.standings}>
@@ -134,7 +140,7 @@ export default function GameScreen() {
   );
 
   const entry = finished ? (
-    <Card mode="contained" style={styles.card}>
+    <Card mode="contained">
       <Card.Title
         title="Final scores"
         subtitle={`${rulesName(game.rules)} · ${scheduleLabel(game.rules, game.players.length)}`}
@@ -167,28 +173,38 @@ export default function GameScreen() {
           headerRight: () => <GameMenu game={game} onChange={onChange} />,
         }}
       />
-      {wide ? (
-        <View style={styles.wide}>
-          <ScrollView
-            style={styles.entryColumn}
-            contentContainerStyle={styles.pad}
-          >
-            {summary}
-            {entry}
-          </ScrollView>
-          <ScrollView
-            style={styles.boardColumn}
-            contentContainerStyle={styles.pad}
-          >
-            {board}
-          </ScrollView>
-        </View>
-      ) : (
+      {stacked ? (
         <ScrollView contentContainerStyle={styles.pad}>
           {summary}
           {entry}
           {board}
         </ScrollView>
+      ) : (
+        <View style={styles.tabs}>
+          <SegmentedButtons
+            value={tab}
+            onValueChange={(v) => setTab(v as Tab)}
+            style={styles.tabBar}
+            buttons={[
+              {
+                value: "hand",
+                label: finished ? "Result" : `Hand ${game.hands.length + 1}`,
+                icon: "cards-playing-outline",
+              },
+              { value: "scores", label: "Scores", icon: "table" },
+            ]}
+          />
+          <ScrollView contentContainerStyle={styles.pad}>
+            {tab === "hand" ? (
+              <>
+                {summary}
+                {entry}
+              </>
+            ) : (
+              board
+            )}
+          </ScrollView>
+        </View>
       )}
       <EditHandDialog
         game={game}
@@ -207,11 +223,21 @@ export default function GameScreen() {
 
 const styles = StyleSheet.create({
   center: { flex: 1, alignItems: "center", justifyContent: "center" },
-  pad: { padding: 16, gap: 12 },
-  wide: { flex: 1, flexDirection: "row" },
-  entryColumn: { flex: 2, maxWidth: 560 },
-  boardColumn: { flex: 3 },
+  pad: {
+    padding: 16,
+    gap: 16,
+    width: "100%",
+    maxWidth: CONTENT_WIDTH,
+    alignSelf: "center",
+  },
+  tabs: { flex: 1 },
+  tabBar: {
+    marginHorizontal: 16,
+    marginTop: 12,
+    maxWidth: CONTENT_WIDTH - 32,
+    width: "100%",
+    alignSelf: "center",
+  },
   standings: { flexDirection: "row", flexWrap: "wrap", gap: 8 },
-  card: { marginBottom: 16 },
   final: { gap: 4 },
 });
