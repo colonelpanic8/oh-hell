@@ -38,3 +38,7 @@ desktop:
 # Build and run on a connected Android device; run from `nix develop .#android`.
 android *args:
     yarn android "$@"
+
+# Build the self-hosted F-Droid repository into target/fdroid; see docs/fdroid.md.
+fdroid-repo:
+    ./scripts/fdroid/build-repo.sh

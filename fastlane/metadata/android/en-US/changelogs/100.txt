@@ -1,0 +1,1 @@
+First release: Oh Hell scoring with configurable rules and presets.

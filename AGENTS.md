@@ -28,6 +28,10 @@ lib/
   format.ts   # display strings
 tests/        # jest unit tests for lib/
 nix/          # web + desktop packages
+plugins/      # expo config plugins (release signing)
+fastlane/     # Android store metadata and per-versionCode changelogs
+fdroid/       # self-hosted F-Droid repo config; built by scripts/fdroid/
+docs/         # fdroid.md: releasing and signing
 ```
 
 ## Invariants
@@ -51,3 +55,7 @@ nix/          # web + desktop packages
 - `just check` runs prettier, alejandra, eslint, tsc, and jest. CI runs the same
   thing plus `nix build .#web .#desktop`.
 - `just web` (dev server), `just web-build`, `just desktop`, `just android`.
+- Releases: bump `version` in `package.json`, add a fastlane changelog named
+  after the derived versionCode, tag `v<version>`. The Release workflow builds
+  the signed APK; the site workflow then republishes web + F-Droid repo to
+  Pages. Details in `docs/fdroid.md`.

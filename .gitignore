@@ -27,3 +27,5 @@ result-*
 *.swp
 *~
 .DS_Store
+/target/
+.playwright-cli/

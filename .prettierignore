@@ -2,3 +2,5 @@ dist/
 node_modules/
 .expo/
 flake.lock
+.playwright-cli/
+target/

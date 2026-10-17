@@ -1,0 +1,7 @@
+Keep score for Oh Hell (also known as Oh Pshaw, Blackout, Nomination Whist, Kachuful and many other names) without pen and paper.
+
+Enter each player's bid and the tricks they took; the app works out the scores, the running totals, the dealer, how many cards to deal and which bid the dealer is not allowed to make.
+
+Every rule is a separate setting: how the number of cards dealt changes from hand to hand, how trumps are chosen, whether the dealer's bid is restricted, and exactly how bids, made bids, over-tricks and under-tricks score. Pick one of the included presets or build your own house rules.
+
+Games are stored only on this device. There is no account and no network access.

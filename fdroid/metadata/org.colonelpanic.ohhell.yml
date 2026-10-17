@@ -1,0 +1,12 @@
+Categories:
+  - Games
+License: MIT
+AuthorName: Ivan Malison
+WebSite: https://colonelpanic8.github.io/oh-hell/
+SourceCode: https://github.com/colonelpanic8/oh-hell
+IssueTracker: https://github.com/colonelpanic8/oh-hell/issues
+Changelog: https://github.com/colonelpanic8/oh-hell/releases
+
+# Name, summary, description and changelogs come from fastlane/metadata/android.
+# Versions are appended from the collected APKs by scripts/fdroid/build-repo.sh.
+UpdateCheckMode: None

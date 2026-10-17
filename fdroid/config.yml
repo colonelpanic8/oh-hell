@@ -1,0 +1,21 @@
+# Self-hosted F-Droid repository. scripts/fdroid/build-repo.sh copies this into
+# a scratch directory, fills repo/ with the signed APKs attached to GitHub
+# releases, and runs `fdroid update`. The result is deployed next to the web
+# app on GitHub Pages. Credentials come from the environment at update time.
+
+repo_url: https://colonelpanic8.github.io/oh-hell/fdroid/repo
+repo_name: Oh Hell
+repo_icon: icon.png
+repo_description: >-
+  Oh Hell, a scorekeeper for the card game. The same signed APKs as the GitHub
+  releases, so they upgrade in place from a manually installed APK.
+
+archive_older: 0
+
+# The APK release key also signs the index, so there is one secret to manage.
+keystore: keystore.jks
+repo_keyalias: { env: FDROID_KEY_ALIAS }
+keystorepass: { env: FDROID_KEYSTORE_PASSWORD }
+keypass: { env: FDROID_KEY_PASSWORD }
+
+make_current_version_link: false
