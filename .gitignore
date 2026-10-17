@@ -1,0 +1,16 @@
+/target/
+/dist/
+result
+result-*
+
+.direnv/
+.envrc.local
+.envrc.override
+.worktrees/
+node_modules/
+
+.idea/
+.vscode/
+*.swp
+*~
+.DS_Store

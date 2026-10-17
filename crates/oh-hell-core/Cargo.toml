@@ -1,0 +1,11 @@
+[package]
+name = "oh-hell-core"
+description = "Oh Hell scoring rules and game state"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[dependencies]
+serde.workspace = true
+thiserror.workspace = true

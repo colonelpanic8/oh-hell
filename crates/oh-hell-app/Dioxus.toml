@@ -1,0 +1,9 @@
+[application]
+name = "Oh Hell"
+
+[web.app]
+title = "Oh Hell"
+
+[bundle]
+identifier = "org.colonelpanic.ohhell"
+publisher = "Ivan Malison"
